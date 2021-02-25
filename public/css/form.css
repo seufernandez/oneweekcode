@@ -1,0 +1,99 @@
+
+form{
+    width: 700px;
+    margin: 6.4rem auto;
+    background: white;
+    border: 1px solid #d3e2e5;
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+    padding: 8rem;
+}
+
+fieldset {
+    border: none;
+
+
+}
+
+fieldset legend {
+    width: 100%;
+    font-size:3.2rem ;
+    line-height: 1.5;
+    color: #5c8599;
+    font-weight: 700;
+    border-bottom: 1px solid #d3e2e5;
+
+    margin-bottom: 4rem;
+    padding: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+/*pegar o irmão, para nao mecher no field de cima, somente no de baixo*/
+fieldset + fieldset{
+    margin-top: 8rem;
+}
+
+/*aplica o input block somente no que tiver um irmao anterior = o primeiro nao é afetado*/
+.input-block + .input-block {
+    margin-top: 2.4rem;
+}
+
+.input-block label {
+    color: #8fa7b3;
+    margin-bottom: .8rem;
+    line-height: 1.5;
+}
+
+.input-block label span{
+    font-size: 1.4rem;
+    color: #8fa7b3;
+    margin-left: 2.4rem;
+    line-height: 1.5; 
+
+}
+
+.input-block input,
+.input-block textarea {
+    width: 100%;
+    background: #f5f8fa;
+    border: 1px solid #d3e2e5;
+    border-radius: 1.5rem;
+
+    color: #5c8599;
+    outline: none;
+}
+
+/*mudar cor acessibilidade*/
+.input-block input:focus,
+.input-block textarea:focus{
+    border: 1.5px solid rgb(86, 86, 255)
+}
+
+.input-block input{
+    height: 6.4rem;
+     padding: 0 1.6rem; /*pra nao comecar mt na beirada o txt */
+}
+
+.input-block textarea{
+    height: clamp(120px, 16rem, 24rem);
+    resize: vertical;
+    padding: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.input-block.images button{
+    background: #F5F8FA;
+    border: 1px dashed #96D2F0;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    margin-top: 2.4rem;
+    padding: 0 1.6rem;
+    height: 6.4rem;
+    width: 100%;
+
+    cursor: pointer;
+}
